@@ -11,7 +11,6 @@ function consecutive_sum2(start, end) {
   if (start === end) {
     return start;
   }
-
   const mid = Math.floor((start + end) / 2);
   return consecutive_sum2(start, mid) + consecutive_sum2(mid + 1, end);
 }
