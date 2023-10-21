@@ -3,7 +3,10 @@ function sum_digits(n) {
   if (n < 10) {
     return n;
   }
-  // recursion case
+  /** recursion case
+   *   Math.floor(n/ 10) --> 숫자의 마지막 자리 제거
+   *   n % 10 --> 숫자의 마지막 자리 가져오기
+   * */
   return sum_digits(Math.floor(n / 10)) + (n % 10);
 }
 
